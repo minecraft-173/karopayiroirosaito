@@ -222,7 +222,7 @@ button.textContent = '購入';
 }
 
 function cleanApiBase() {
-return (apiBaseInput.value.trim() || defaultApiBase).replace(//+$/, '');
+return (apiBaseInput.value.trim() || defaultApiBase).replace(/\/+$/, '');
 }
 
 function errorMessage(error) {
