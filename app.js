@@ -1,3 +1,4 @@
+alert("app.js読み込み成功");
 const products = [
 {
 id: 'golden-apple',
