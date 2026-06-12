@@ -1,52 +1,71 @@
 <!doctype html>
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#101318" />
-  <title>KaroCraft Market</title>
+  <title>Venezuela Shop</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="KaroCraft Market">
-      <span>K</span>
-      <strong>KaroCraft Market</strong>
+    <a class="brand" href="./index.html" aria-label="Venezuela Shop">
+      <span>V</span>
+      <strong>Venezuela Shop</strong>
     </a>
-    <form class="shop-config" id="shop-config">
-      <label>
-        <span>KaroPay URL</span>
-        <input id="api-base" name="apiBase" autocomplete="off" />
-      </label>
-      <label>
-        <span>サイト用コード</span>
-        <input id="receive-code" name="receiveCode" autocomplete="off" />
-      </label>
-      <button type="submit">保存</button>
-    </form>
+
+```
+<form class="shop-config" id="shop-config">
+  <label>
+    <span>KaroPay URL</span>
+    <input id="api-base" name="apiBase" autocomplete="off" />
+  </label>
+
+  <label>
+    <span>サイト用コード</span>
+    <input id="receive-code" name="receiveCode" autocomplete="off" />
+  </label>
+
+  <button type="submit">保存</button>
+</form>
+```
+
   </header>
 
   <main>
     <section class="hero">
-      <img src="./assets/shop-hero.png" alt="ゲーム内ショップの商品ディスプレイ" />
-      <div class="hero-copy">
-        <p>Digital Goods</p>
-        <h1>KaroCraft Market</h1>
-        <span>ランク、ジェム、建築キットをKaroPayで販売</span>
-      </div>
-    </section>
+      <img
+        src="./assets/shop-hero.png"
+        alt="Venezuela Shop 商品一覧"
+      />
 
-    <section class="product-section" aria-label="商品一覧">
-      <div class="section-head">
-        <div>
-          <p>Shop Items</p>
-          <h2>商品</h2>
-        </div>
-        <output id="shop-status">設定を保存してください</output>
-      </div>
+```
+  <div class="hero-copy">
+    <p>Minecraft Server Shop</p>
+    <h1>Venezuela Shop</h1>
+    <span>
+      金のリンゴ・エリトラ・ネザライトインゴットなどを販売中
+    </span>
+  </div>
+</section>
 
-      <div class="product-grid" id="product-grid"></div>
-    </section>
+<section class="product-section" aria-label="商品一覧">
+  <div class="section-head">
+    <div>
+      <p>Shop Items</p>
+      <h2>商品一覧</h2>
+    </div>
+
+    <output id="shop-status">
+      サイト用コードを入力してください
+    </output>
+  </div>
+
+  <div class="product-grid" id="product-grid"></div>
+</section>
+```
+
   </main>
 
   <template id="product-card-template">
@@ -56,18 +75,24 @@
         <span class="shape accent"></span>
         <span class="shape spark"></span>
       </div>
-      <div class="product-copy">
-        <small></small>
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="product-buy">
-        <strong></strong>
-        <button type="button">購入</button>
-      </div>
-    </article>
+
+```
+  <div class="product-copy">
+    <small></small>
+    <h3></h3>
+    <p></p>
+  </div>
+
+  <div class="product-buy">
+    <strong></strong>
+    <button type="button">購入</button>
+  </div>
+</article>
+```
+
   </template>
 
   <script src="./app.js" type="module"></script>
+
 </body>
 </html>
