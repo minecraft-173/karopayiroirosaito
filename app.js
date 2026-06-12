@@ -188,7 +188,7 @@ updateStatus(`${product.name} の支払いページを作成中`, 'ready');
 try {
 const apiBase = cleanApiBase();
 
-```
+
 const response = await fetch(`${apiBase}/api/checkout/public/sessions`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
@@ -212,7 +212,7 @@ sessionStorage.setItem('sampleShop.apiBase', apiBase);
 sessionStorage.setItem('sampleShop.lastProduct', JSON.stringify(product));
 
 location.href = data.url;
-```
+
 
 } catch (error) {
 updateStatus(errorMessage(error.message), 'error');
